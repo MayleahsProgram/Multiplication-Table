@@ -23,13 +23,13 @@ class TableDisplay : AppCompatActivity() {
         //Getting data from intent
         val tableString = intent.getStringExtra("tableNumber")
         
-        //Use toInOrNull to prevent crash if input is not  a number
-        val tableNumber = tableString?.length ?: 0
+        //Prevention of crash if input is not  a number
+        val tableNumber = tableString?.toIntOrNull() ?: 0
         val textView = findViewById<TextView>(R.id.textView)
         var tableText = "$tableNumber x table\n\n"
         
         var counter = 1
-        while (counter <= 10){
+        while (counter <= 20){
             val answer = tableNumber * counter
             tableText += "$tableNumber x $counter = $answer\n\n"
             counter++
