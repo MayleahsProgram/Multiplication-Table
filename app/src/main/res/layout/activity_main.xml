@@ -9,12 +9,13 @@
 
     <TextView
         android:id="@+id/titleTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
         android:layout_marginStart="161dp"
         android:layout_marginTop="153dp"
         android:layout_marginEnd="120dp"
         android:text="@string/multiplication_tables"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
